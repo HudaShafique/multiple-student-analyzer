@@ -39,4 +39,4 @@ for student in students:
     print("Total :", student["total"])
     print("heighest :", student["heighest"])
     print("lowest :", student["lowest"])
-    print("--" * 15)
+    print("-" * 30)
