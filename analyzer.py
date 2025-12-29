@@ -13,8 +13,8 @@ for i in range(t_students): #entity
         marks.append(mark)
 
     total = sum(marks)
-    avg = total/len(marks)
-    heighest = max(marks)
+    average= total/len(marks)
+    highest = max(marks)
     lowest = min(marks)
 
 
@@ -23,13 +23,13 @@ for i in range(t_students): #entity
         "Roll no.": roll_no,
         "Marks": marks,
         "total": total,
-        "average": avg,
-        "heighest": heighest,
-        "lowest": lowest
+        "average": average,
+        "highest": highest,
+        "lowest": lowest,
     }
 
     students.append(student)
-    
+
 print("Students data :\n ")
 
 for student in students:
@@ -37,6 +37,8 @@ for student in students:
     print("Roll No:", student["Roll no."])
     print("Marks:", student["Marks"])
     print("Total :", student["total"])
-    print("heighest :", student["heighest"])
-    print("lowest :", student["lowest"])
+    print("Average :", round(student["average"], 2))
+    print("Highest :", student["highest"])
+    print("Lowest :", student["lowest"])
     print("-" * 30)
+
